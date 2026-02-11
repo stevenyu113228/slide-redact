@@ -75,7 +75,7 @@ The cleaned file is safe to share — no original images can be recovered.
 ### Setup
 
 ```bash
-git clone https://github.com/pptx-blur/slide-redact.git
+git clone https://github.com/stevenyu113228/slide-redact.git
 cd slide-redact
 npm install
 npx office-addin-dev-certs install
