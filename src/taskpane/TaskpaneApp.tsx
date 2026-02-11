@@ -28,6 +28,30 @@ export function TaskpaneApp() {
     }
   }, [isReady, isSupported, refresh]);
 
+  // Auto-refresh when slide selection or content changes
+  useEffect(() => {
+    if (!isReady || !isSupported) return;
+
+    const handler = () => {
+      // Only refresh when on the image list view and not currently applying
+      if (!applying && !dialogRef.current) {
+        refresh();
+      }
+    };
+
+    Office.context.document.addHandlerAsync(
+      Office.EventType.DocumentSelectionChanged,
+      handler
+    );
+
+    return () => {
+      Office.context.document.removeHandlerAsync(
+        Office.EventType.DocumentSelectionChanged,
+        { handler }
+      );
+    };
+  }, [isReady, isSupported, applying, refresh]);
+
   const handleDialogMessage = useCallback(
     async (arg: { message: string; origin: string | undefined } | { error: number }) => {
       if ("error" in arg) return; // Dialog error event, ignore
