@@ -1,29 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-  <rect width="80" height="80" rx="8" fill="#2B579A"/>
-  <g stroke="#ffffff" stroke-width="1.5" opacity="0.7">
-    <line x1="16" y1="0" x2="16" y2="80"/>
-    <line x1="32" y1="0" x2="32" y2="80"/>
-    <line x1="48" y1="0" x2="48" y2="80"/>
-    <line x1="64" y1="0" x2="64" y2="80"/>
-    <line x1="0" y1="16" x2="80" y2="16"/>
-    <line x1="0" y1="32" x2="80" y2="32"/>
-    <line x1="0" y1="48" x2="80" y2="48"/>
-    <line x1="0" y1="64" x2="80" y2="64"/>
+  <!-- Background -->
+  <rect width="80" height="80" rx="16" fill="#0F5CA8"/>
+
+  <!-- Slide frame -->
+  <rect x="12" y="16" width="44" height="34" rx="3" fill="white" opacity="0.95"/>
+
+  <!-- Image content hint (landscape + sun) -->
+  <circle cx="24" cy="26" r="4" fill="#F59E0B"/>
+  <path d="M12 44 L24 34 L34 40 L42 32 L56 44 Z" fill="#86EFAC" opacity="0.6"/>
+
+  <!-- Pixel mosaic overlay on slide -->
+  <rect x="12" y="16" width="11" height="8.5" rx="0" fill="#0D4F8C" opacity="0.85"/>
+  <rect x="23" y="16" width="11" height="8.5" fill="#1A6BBF" opacity="0.7"/>
+  <rect x="34" y="16" width="11" height="8.5" fill="#0D4F8C" opacity="0.8"/>
+  <rect x="45" y="16" width="11" height="8.5" fill="#1A6BBF" opacity="0.65"/>
+
+  <rect x="12" y="24.5" width="11" height="8.5" fill="#1A6BBF" opacity="0.65"/>
+  <rect x="23" y="24.5" width="11" height="8.5" fill="#0D4F8C" opacity="0.85"/>
+  <rect x="34" y="24.5" width="11" height="8.5" fill="#1A6BBF" opacity="0.75"/>
+  <rect x="45" y="24.5" width="11" height="8.5" fill="#0D4F8C" opacity="0.6"/>
+
+  <rect x="12" y="33" width="11" height="8.5" fill="#0D4F8C" opacity="0.7"/>
+  <rect x="23" y="33" width="11" height="8.5" fill="#1A6BBF" opacity="0.6"/>
+
+  <!-- Shield badge -->
+  <g transform="translate(52, 38)">
+    <circle cx="12" cy="12" r="14" fill="#0F5CA8"/>
+    <path d="M12 2 L4 6.5 L4 13.5 C4 18.5 12 23 12 23 C12 23 20 18.5 20 13.5 L20 6.5 Z"
+          fill="white" opacity="0.95"/>
+    <path d="M9 12.5 L11.5 15 L16 10" stroke="#0F5CA8" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
-  <rect x="6" y="6" width="16" height="16" fill="#ffffff" opacity="0.3" rx="2"/>
-  <rect x="22" y="6" width="16" height="16" fill="#ffffff" opacity="0.15" rx="2"/>
-  <rect x="38" y="6" width="16" height="16" fill="#ffffff" opacity="0.25" rx="2"/>
-  <rect x="6" y="22" width="16" height="16" fill="#ffffff" opacity="0.15" rx="2"/>
-  <rect x="22" y="22" width="16" height="16" fill="#ffffff" opacity="0.35" rx="2"/>
-  <rect x="38" y="22" width="16" height="16" fill="#ffffff" opacity="0.1" rx="2"/>
-  <rect x="6" y="38" width="16" height="16" fill="#ffffff" opacity="0.25" rx="2"/>
-  <rect x="22" y="38" width="16" height="16" fill="#ffffff" opacity="0.1" rx="2"/>
-  <rect x="38" y="38" width="16" height="16" fill="#ffffff" opacity="0.3" rx="2"/>
-  <rect x="54" y="6" width="16" height="16" fill="#ffffff" opacity="0.1" rx="2"/>
-  <rect x="54" y="22" width="16" height="16" fill="#ffffff" opacity="0.25" rx="2"/>
-  <rect x="54" y="38" width="16" height="16" fill="#ffffff" opacity="0.15" rx="2"/>
-  <rect x="6" y="54" width="16" height="16" fill="#ffffff" opacity="0.1" rx="2"/>
-  <rect x="22" y="54" width="16" height="16" fill="#ffffff" opacity="0.25" rx="2"/>
-  <rect x="38" y="54" width="16" height="16" fill="#ffffff" opacity="0.15" rx="2"/>
-  <rect x="54" y="54" width="16" height="16" fill="#ffffff" opacity="0.3" rx="2"/>
 </svg>
